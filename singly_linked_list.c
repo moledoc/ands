@@ -118,6 +118,15 @@ void printer(struct Node *node)
 	printf("\n");
 }
 
+void free_all(struct Node *node)
+{
+	while (node) {
+		struct Node *free_me = node;
+		node = node->next;
+		free(free_me);
+	}
+}
+
 int main(void)
 {
 	struct Node *head;
@@ -150,4 +159,5 @@ int main(void)
 #endif
 	printer(head);
 
+	free_all(head);
 }
