@@ -8,6 +8,8 @@ Practicing algorithms and data structures in C
 
 * [x] singly linked list
 * [ ] double linked list
+* [ ] circular singly linked list
+* [ ] circular doubly linked list
 * [ ] stack
 * [ ] queue
 * [ ] hash table
@@ -20,6 +22,12 @@ Practicing algorithms and data structures in C
 * [ ] ...
 
 ## Algorithms
+
+### Sorting
+
+TBD
+
+### Searching
 
 TBD
 
