@@ -7,8 +7,8 @@ Practicing algorithms and data structures in C
 ### Lists
 
 * [x] singly linked list
-* [ ] double linked list
-* [ ] circular singly linked list
+* [x] double linked list
+* [x] circular singly linked list
 * [ ] circular doubly linked list
 * [ ] stack
 * [ ] queue
