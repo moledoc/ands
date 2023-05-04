@@ -48,23 +48,20 @@ struct Node *push(struct Node *node, int value)
 // insert to index
 struct Node *insert(struct Node *node, int value, int index)
 {
+	if (!node || index<0) return node;
 	struct Node *head = node;
-	if (index<0) return head;
-
-	struct Node *new_node = (struct Node *)malloc(sizeof(struct Node));
-	new_node->value = value;
-	if (!node) return new_node;
 
 	int i = 1;
 	while (node->next && i < index) {
 		node = node->next;
 		++i;
 	}
-	
+	if ( i < index) return head;
+	struct Node *new_node = (struct Node *)malloc(sizeof(struct Node));
+	new_node->value = value;
 	struct Node *after_new = node->next;
 	node->next = new_node;
 	new_node->next = after_new;
-
 	return head;
 }
 
