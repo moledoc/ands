@@ -9,7 +9,7 @@ Practicing algorithms and data structures in C
 * [x] singly linked list
 * [x] double linked list
 * [x] circular singly linked list
-* [ ] circular doubly linked list
+* [x] circular doubly linked list
 * [x] stack
 * [x] queue
 * [ ] hash table
